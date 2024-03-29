@@ -7,7 +7,44 @@
     <link rel="stylesheet" href="/dist/css/index.css">
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    
+<body class="mt-5">
+    <div class="container">
+        <div class="row vh-100">
+            <header class="col-2">
+                <nav class="d-flex">
+                    <ul class="nav flex-column gap-3">
+                        <li class="nav-item">
+                            <a href="/feed/index.html">Feed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/profile/index.html">Profile</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="text-center col-10">
+                <a href="/feed/index.html"> <img src="/src/svg/pundit-pitch-logo.svg" alt="Pundit Pitch Logo" width="100"></a>
+                <nav class="navbar border pt-3 pb-3 ps-3 pe-3">
+                    <div class="d-flex gap-3">
+                        <a href="#">For you</a>
+                        <a href="">Followers</a>
+                    </div>
+                    <form class="d-flex justify-content-end" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
