@@ -10,40 +10,93 @@
 <body class="mt-5">
     <div class="container">
         <div class="row vh-100">
-            <header class="col-2">
+            <header class="col-2 mt-4">
                 <nav class="d-flex">
-                    <ul class="nav flex-column gap-3">
-                        <li class="nav-item">
-                            <a href="/feed/index.html">Feed</a>
+                    <ul class="nav flex-column gap-5">
+                        <li class="nav-item text-black">
+                            <a href="/feed/index.html" class="text-decoration-none">
+                                <i class="bi bi-house"></i>
+                                <span>Feed</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Messages</a>
+                            <a href="#" class="text-decoration-none">Messages</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Notifications</a>
+                            <a href="#" class="text-decoration-none">Notifications</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Community</a>
+                            <a href="#" class="text-decoration-none">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/profile/index.html">Profile</a>
+                            <a href="/profile/index.html" class="text-decoration-none">Profile</a>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <div class="text-center col-10">
-                <a href="/feed/index.html"> <img src="/src/svg/pundit-pitch-logo.svg" alt="Pundit Pitch Logo" width="100"></a>
-                <nav class="navbar border pt-3 pb-3 ps-3 pe-3">
-                    <div class="d-flex gap-3">
-                        <a href="#">For you</a>
-                        <a href="">Followers</a>
+            <main class="col-10">
+                <div class="text-center">
+                    <a href="/feed/index.html"> <img src="/src/svg/pundit-pitch-logo.svg" alt="Pundit Pitch Logo" width="100"></a>
+                </div>
+                <section class="row border pt-3 pb-2 mb-2">
+                    <div class="col-auto">
+                        <img src="https://avatars.githubusercontent.com/u/128052254?v=4" alt="profile-picture" class="rounded-circle" width="30">
                     </div>
-                    <form class="d-flex justify-content-end" role="search">
+                    <div class="col text-start">
+                        <a href="/profile/index.html" class="card-title text-decoration-none fw-bold">kawo</a>
+                        <p class="text-muted">Now</p>
+                    </div>
+                    <form action="/feed/">
+                        <label for="post" class="visually-hidden form-label">Post area</label>
+                        <textarea id="post" placeholder="What's on your mind?"></textarea>
+                    </form>
+                    <div class="col d-flex justify-content-end">
+                        <button class="btn btn-primary">Post</button>
+                    </div>
+                </section>
+                <nav class="navbar row border pt-3 mb-2">
+                    <div class="col">
+                        <a href="#" class="text-decoration-none fw-bold">For you</a>
+                        <a href="#" class="text-decoration-none">Followers</a>
+                    </div>
+                    <form class="col justify-content-end" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     </form>
-                </div>
-
-            </div>
+                </nav>
+                <section>
+                    <article class="row border pt-3 mb-2">
+                        <div class="col-auto">
+                            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile-picture" class="rounded-circle" width="30" height="30">
+                        </div>
+                        <div class="col text-start">
+                            <a href="#" class="card-title text-decoration-none fw-bold">Mr. Football</a>
+                            <p class="text-muted"> 18 mar 2024</p>
+                            <p>The new Norwegian national team jersey looks like a pepsi commercial.. Reckon Pepsi will sell a s* ton of cans when Haaland gets pictured in it.</p>
+                        </div>
+                    </article>
+                </section>
+                <article class="row border pt-3 mb-2">
+                    <div class="col-auto">
+                        <img src="https://images.unsplash.com/photo-1695637453055-e5c5aeea514a?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile-picture" class="rounded-circle" width="30" height="30">
+                    </div>
+                    <div class="col text-start">
+                        <a href="#" class="card-title text-decoration-none fw-bold">FPL Monster</a>
+                        <p class="text-muted"> 18 mar 2024</p>
+                        <p>Looking at the stats before Liverpool - Man City kicks off, Salah has scored 11 goals in his 19 appearances against City. Surely you got to have him in your team? </p>
+                    </div>
+                </article>
+                <article class="row border pt-3 mb-2">
+                    <div class="col-auto">
+                        <img src="https://images.unsplash.com/photo-1582055624872-adf3f81ebc7f?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile-picture" class="rounded-circle" width="30">
+                    </div>
+                    <div class="col text-start">
+                        <a href="#" class="card-title text-decoration-none fw-bold">Fabrizio Transfero</a>
+                        <p class="text-muted"> 18 mar 2024</p>
+                        <p>Breaking! Messi on the verge of signing for Barca 
+                            once again according to Marca! The 36 years old may very well return to europeen football. If true, this would be absolutely shocking transfer, but a joy for all football fans. </p>
+                    </div>
+                </article>
+            </main>
         </div>
     </div>
 </body>
