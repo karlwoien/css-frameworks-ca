@@ -9,19 +9,27 @@
 </head>
 <body>
     <div class="container text-center">
-        <div class=" flex-column align-items-center">
+        <div class="m-auto" style="width: 400px;">
             <div>
                 <img src="/src/svg/pundit-pitch-logo.svg" alt="Pundit Pitch logo">
             </div>
            <div>
-                <form class="d-flex flex-column gap-3 w-25 m-auto">
-                    <input type="email" placeholder="E-mail address">
-                    <input type="password" class="form-controll" placeholder="Password" minlength="8" required>
-                    <a href="#" class="text-decoration-underline text-primary">Forgot your password?</a>
-                    <a href="/profile/index.html" class="btn btn-primary">Login</a>
+                <form class="d-flex flex-column m-auto" style="width: 360px;">
+                    <div>
+                        <label for="emailinput" class="form-label" aria-label="Input for e-mail address"></label>
+                        <input type="email" class="form-control bg-white" id="emailinput" placeholder="E-mail address">
+                    </div>
+                    <div class="mb-2">
+                        <label for="passwordinput" class="form-label" aria-label="Input for your password"></label>
+                        <input type="password" id="passwordinput" class="form-control bg-white" placeholder="Password" required minlength="8">
+                    </div>
+                    <div class="mb-3">
+                        <a href="#" class="text-decoration-underline text-primary">Forgot your password?</a>
+                    </div>
+                    <button type="submit" formaction="/profile/index.html" class="btn btn-primary">Login</button>
                 </form>
            </div>
-           <div class="mt-5">
+           <div class="mt-4">
                 <p>Don't have an account? <a href="#" class="text-primary text-decoration-underline">Sign up now!</a></p>
            </div>
         </div>
