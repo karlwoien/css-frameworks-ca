@@ -51,10 +51,13 @@
                 </nav>
             </header>
             <main class="col mt-4">
-                <nav class="navbar row border rounded pt-3 mb-2 bg-white">
+                <nav class="navbar row border rounded pt-3 pb-3 mb-2 bg-white">
                     <div class="col">
-                        <a href="#" class="text-primary fw-bold">For you</a>
-                        <a href="#" class="text-primary">Following</a>
+                        <select class="form-select bg-white" aria-label="Sort posts">
+                            <option selected>Sort posts</option>
+                            <option value="1">For you</option>
+                            <option value="2">Following</option>
+                          </select>
                     </div>
                     <form class="col justify-content-end" role="search">
                         <input class="form-control me-2 bg-white" type="search" placeholder="Search" aria-label="Search">
